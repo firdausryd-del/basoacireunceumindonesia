@@ -1,0 +1,287 @@
+/* RESET DASAR */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* WARNA BRAND */
+:root {
+    --primary-color: #D62828; /* Merah menyala/pedas */
+    --secondary-color: #F77F00; /* Oranye/kuning hangat */
+    --text-dark: #222;
+    --text-light: #fff;
+}
+
+/* HEADER/NAVIGASI */
+header {
+    background-color: var(--text-light);
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: var(--primary-color);
+    font-size: 1.8em;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--text-dark);
+    margin-left: 25px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.cta-nav {
+    background-color: var(--secondary-color);
+    color: var(--text-light) !important;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.cta-nav:hover {
+    background-color: #e07000;
+    color: var(--text-light) !important;
+}
+
+/* HERO SECTION */
+.hero {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+    padding: 100px 0;
+    text-align: center;
+    /* Tambahkan background image Baso Aci yang menggiurkan di sini! */
+    background-image: url('placeholder-hero.jpg'); /* Ganti dengan gambar asli */
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.4); /* Overlay agar teks jelas */
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.hero h2 {
+    font-size: 3em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+/* BUTTON STYLING */
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.button.primary {
+    background-color: var(--secondary-color);
+    color: var(--text-light);
+    border: 2px solid var(--secondary-color);
+}
+
+.button.primary:hover {
+    background-color: #e07000;
+}
+
+.button.secondary {
+    background-color: var(--text-light);
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.button.secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+}
+
+/* KEUNGGULAN SECTION */
+.features {
+    padding: 60px 0;
+    text-align: center;
+    background-color: var(--text-light);
+}
+
+.features h3 {
+    font-size: 2em;
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.feature-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.feature-item {
+    flex-basis: 30%;
+    padding: 20px;
+    border-left: 5px solid var(--secondary-color);
+    text-align: left;
+}
+
+.feature-item h4 {
+    color: var(--text-dark);
+    margin-bottom: 10px;
+}
+
+/* PRODUK SECTION */
+.products {
+    padding: 80px 0;
+    text-align: center;
+    background-color: #fffaf0; /* Warna krem lembut */
+}
+
+.products h2 {
+    font-size: 2.5em;
+    color: var(--text-dark);
+    margin-bottom: 50px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    background-color: var(--text-light);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.product-card h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.all-menu-cta {
+    margin-top: 40px;
+}
+
+.button.large {
+    font-size: 1.1em;
+    padding: 15px 40px;
+}
+
+
+/* FOOTER */
+footer {
+    background-color: var(--text-dark);
+    color: #ccc;
+    padding: 30px 0;
+    font-size: 0.9em;
+}
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links a {
+    color: #ccc;
+    text-decoration: none;
+    margin-left: 15px;
+}
+
+/* Media Query untuk Responsif */
+@media (max-width: 768px) {
+    .logo {
+        font-size: 1.5em;
+    }
+    nav ul {
+        display: none; /* Sembunyikan navigasi di mobile, biasanya diganti dengan menu hamburger */
+    }
+    header .container {
+        justify-content: center;
+    }
+    .hero h2 {
+        font-size: 2em;
+    }
+    .feature-grid {
+        flex-direction: column;
+    }
+    .feature-item {
+        text-align: center;
+        border-left: none;
+        border-bottom: 3px solid var(--secondary-color);
+        margin-bottom: 20px;
+    }
+    .product-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-card {
+        width: 90%;
+    }
+    footer .container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .social-links {
+        margin-top: 10px;
+    }
+}

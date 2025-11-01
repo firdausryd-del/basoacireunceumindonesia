@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Baso Aci Reunceum Indonesia</title>
+  <meta name="description" content="Baso Aci Reunceum — sensasi penggila aci dari Garut. Pesan online via WhatsApp.">
+
+  <style>
+    :root{
+      --orange:#f09400;
+      --orange-dark:#c46f06;
+      --bg:#bb7102;
+      --text:#1b1b1b;
+      --muted:#6b5b4b;
+      --card-radius:14px;
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    }
+
+    *{box-sizing:border-box}
+    body{margin:0;background:linear-gradient(180deg,var(--bg),#fff);color:var(--text);}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:18px 28px;background:transparent;position:sticky;top:0;z-index:40}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:64px;height:64px;object-fit:contain;border-radius:8px}
+    .brand h1{font-size:20px;margin:0;font-weight:700}
+
+    nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0}
+    nav a{color:var(--text);text-decoration:none;font-weight:600}
+
+    .container{max-width:1100px;margin:26px auto;padding:0 20px}
+
+    /* HERO */
+    .hero{display:grid;grid-template-columns:1fr 480px;gap:30px;align-items:center;margin-top:18px}
+    .hero-left{padding:20px}
+    .eyebrow{display:inline-block;background:var(--orange);color:#fff;padding:6px 12px;border-radius:999px;font-weight:700;font-size:13px}
+    .hero h2{font-size:44px;margin:18px 0 8px;line-height:1.02}
+    .hero p{color:var(--muted);font-size:18px;margin:0 0 18px}
+    .cta-row{display:flex;gap:12px}
+    .btn{background:var(--orange-dark);color:#fff;padding:12px 18px;border-radius:10px;border:none;cursor:pointer;font-weight:700}
+    .btn.outline{background:transparent;color:var(--orange-dark);border:2px solid var(--orange-dark)}
+
+    .hero-right{display:flex;align-items:center;justify-content:center}
+    .hero-card{background:linear-gradient(180deg,#fff, #fff0);padding:8px;border-radius:18px;box-shadow:0 12px 30px rgba(0,0,0,0.08)}
+    .hero-card img{width:100%;height:360px;object-fit:cover;border-radius:12px}
+
+    /* MENU */
+    .section{margin:46px 0}
+    .section h3{font-size:28px;margin:0 0 18px}
+    .menu-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:18px}
+    .card{background:#fff;border-radius:var(--card-radius);padding:12px;box-shadow:0 6px 18px rgba(0,0,0,0.04);text-align:center}
+    .card img{width:100%;height:140px;object-fit:cover;border-radius:10px}
+    .price{font-weight:700;margin-top:8px}
+    .muted{color:var(--muted)}
+
+    /* Testimonials + contact */
+    .split{display:grid;grid-template-columns:1fr 340px;gap:20px;align-items:start}
+    .testimonial{background:linear-gradient(180deg,#fff,#fff);padding:18px;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,0.04)}
+    .quote{font-size:18px;margin:0 0 8px;color:var(--text)}
+    .author{color:var(--muted);font-weight:700}
+
+    .contact-card{background:linear-gradient(180deg,var(--orange),var(--orange-dark));color:#fff;padding:18px;border-radius:12px}
+    .contact-card a{color:#fff;text-decoration:none;display:block;margin:8px 0;font-weight:700}
+
+    footer{padding:26px 0;text-align:center;color:var(--muted)}
+
+    /* responsive */
+    @media(max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .hero-right{order:-1}
+      .hero-card img{height:260px}
+      .split{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="brand container">
+      <img src="https://i.postimg.cc/SKSHwGqp/images-3.jpg" alt="https://i.postimg.cc/SKSHwGqp/images-3.jpg" />
+      <div>
+        <h1>Baso Aci Reunceum</h1>
+        <div style="color:var(--muted);font-size:13px">Sensasi Penggila Aci • Garut</div>
+      </div>
+    </div>
+    <nav style="margin-left:auto;padding-right:20px">
+      <ul>
+        <li><a href="#beranda">Beranda</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#testimoni">Testimoni</a></li>
+        <li><a href="#pesan">Pesan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container" id="beranda">
+    <section class="hero">
+      <div class="hero-left">
+        <span class="eyebrow">Baso Aci Reunceum</span>
+        <h2>SENSASI PENGGILA ACI!</h2>
+        <p>Rasakan gurih pedasnya baso aci khas Garut dengan resep tradisional yang bikin nagih. Paket hemat, pengiriman cepat.</p>
+        <div class="cta-row">
+          <button class="btn" onclick="orderWhatsApp('Saya ingin pesan Baso Aci')">PESAN SEKARANG</button>
+          <a class="btn outline" href="#menu">LIHAT MENU</a>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <div class="hero-card">
+          <img src="https://i.postimg.cc/BbGr7BwF/Whats-App-Image-2025-11-01-at-09-10-00-3365b247.jpg" alt="Mangkok Baso Aci Reunceum" />
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <h3>Menu Favorit</h3>
+      <div class="menu-grid">
+
+        <article class="card">
+          <img src="https://i.postimg.cc/gJG1bHWG/Whats-App-Image-2025-11-01-at-09-10-00-4a887e78.jpg" alt="cireng kuah">
+          <h4>Cireng Kuah</h4>
+          <div class="muted">Rp.15.000</div>
+          <div class="price"></div>
+          <button class="btn" onclick="orderWhatsApp('Saya ingin pesan: cireng kuah - 1 porsi')">PESAN VIA WHATSAPP</button>
+        </article>
+
+        <article class="card">
+          <img src="https://i.postimg.cc/mkvwBTHw/Whats-App-Image-2025-11-01-at-09-39-09-857905d7.jpg
+                    " alt="Baso aci premium">
+          <h4>Baso Aci Premium</h4>
+          <div class="muted">Rp 15.000</div>
+          <div class="price"></div>
+          <button class="btn" onclick="orderWhatsApp('Saya ingin pesan: Baso Aci Premium')">PESAN VIA WHATSAPP</button>
+        </article>
+
+        <article class="card">
+          <img src="https://i.postimg.cc/m2jB5hfV/Whats-App-Image-2025-11-01-at-09-09-59-f8264dc3.jpg" alt="Baso aci ekonomis">
+          <h4>Baso Aci Ekonomis</h4>
+          <div class="muted">Rp 12.000</div>
+          <div class="price"></div>
+          <button class="btn" onclick="orderWhatsApp('Saya ingin pesan: Baso Aci ekonomis  - 1 porsi')">PESAN VIA WHATSAPP</button>
+        </article>
+
+        <article class="card">
+          <img src="https://i.postimg.cc/QtVGWMKb/Whats-App-Image-2025-11-01-at-09-10-01-69193f7c.jpg" alt="Baso aci tulang rangu">
+          <h4>Baso Aci Tulang Rangu</h4>
+          <div class="muted">Rp 12.000</div>
+          <div class="price"></div>
+          <button class="btn" onclick="orderWhatsApp('Saya ingin pesan: Baso aci tulang rangu')">PESAN VIA WHATSAPP</button>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="section" id="testimoni">
+      <div class="split">
+        <div>
+          <h3>Testimoni Pelanggan</h3>
+
+          <div class="testimonial">
+            <p class="quote">“recomended banget buat yg suka baso aci 👍🏻👍🏻👍🏻”</p>
+            <div class="author">- yudi mulyadi</div>
+          </div>
+          <div style="height:14px"></div>
+
+         
+          <div class="testimonial">
+            <p class="quote">“Kuahnya gurih banget, paketannya lengkap.”</p>
+            <div class="author">- sofyann</div>
+          </div>
+           <div style="height:14px"></div>
+          
+          <div class="testimonial">
+            <p class="quote">“Inilah Tempat makan Bakso terenak Di Garut”</p>
+            <div class="author">- ari oktaferi</div>
+          </div>
+          <div style="height:14px"></div>
+          
+          <div class="testimonial">
+            <p class="quote">“Mantap Betulll”</p>
+            <div class="author">- Muhammad </div>
+          </div>
+          <div style="height:14px"></div>
+        </div>
+
+        <aside class="contact-card" id="pesan">
+          <h3 style="margin-top:0">Pesan Sekarang</h3>
+          <p style="margin:6px 0">Klik untuk chat WhatsApp kami dan konfirmasi pesanan.</p>
+          <a href="#" onclick="orderWhatsApp('Halo, saya mau pesan dari Baso Aci Reunceum')">📱 +62 899-3926-658</a>
+          <a href="mailto:warungreunceum@gmail.com">✉️ warungreunceum@gmail.com</a>
+          <div style="margin-top:12px">📌Perumahan pesona intan No.10-11 Blok D3, Mekarjaya, Kec. Tarogong Kaler, Kabupaten Garut, Jawa Barat 44151</div>
+
+          <div style="margin-top:14px;background:#fff;padding:8px;border-radius:10px;color:var(--text)">
+            <small style="font-weight:700">Location shop</small>
+            <div style="height:150px;margin-top:8px;border-radius:8px;overflow:hidden">
+              <iframe width="100%" height="100%" style="border:0" loading="lazy" allowfullscreen
+                src="https://maps.app.goo.gl/kEHPF4RELw9MsH8Z8">
+              </iframe>
+            </div>
+          </div>
+
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="kontak">
+      <h3>Hubungi Kami</h3>
+      <p class="muted">Butuh bantuan untuk transaksi atau catering? Hubungi lewat WhatsApp atau email.</p>
+
+      <div style="display:flex;gap:20px;flex-wrap:wrap;margin-top:12px">
+        <div style="min-width:260px;background:#0d9900;padding:14px;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,0.04)">
+          <strong>WhatsApp</strong>
+          <div style="margin-top:6px">+62 899-3926-658</div>
+          <button class="btn" style="margin-top:10px" onclick="orderWhatsApp('Saya mau info menu & catering')">Chat Sekarang</button>
+        </div>
+
+        <div style="min-width:260px;background:hsl(36, 100%, 22%);padding:14px;border-radius:12px;box-shadow:0 6px 16px rgba(0,0,0,0.04)">
+          <strong>Email</strong>
+          <div style="margin-top:6px">warungreunceum@gmail.com</div>
+          <a href="mailto:info@basoacireunceum.id" class="btn" style="margin-top:10px;display:inline-block;text-align:center">Kirim Email</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2025 Baso Aci Reunceum Indonesia — Semua hak cipta dilindungi.
+    </div>
+  </footer>
+
+  <script>
+    const WA_NUMBER = '628993926658';
+
+    function orderWhatsApp(defaultText){
+      const text = encodeURIComponent(defaultText + "\nNama: \nAlamat: \nPesanan: \nCatatan: ");
+      const url = `https://wa.me/${WA_NUMBER}?text=${text}`;
+      window.open(url, '_blank');
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', function(e){
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if(target) target.scrollIntoView({behavior:'smooth',block:'start'});
+      })
+    });
+  </script>
+
+</body>
+</html>
